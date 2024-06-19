@@ -124,7 +124,7 @@ public class ChessGameGUI extends JFrame {
         boolean inCheck = game.isInCheck(currentPlayer);
 
         if (inCheck) {
-            JOptionPane.showMessageDialog(this, currentPlayer + "is in check!");
+            JOptionPane.showMessageDialog(this, currentPlayer + " is in check!");
         }
     }
 

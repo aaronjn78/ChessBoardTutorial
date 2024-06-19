@@ -15,7 +15,7 @@ public class Queen extends Piece{
 
         int rowDiff = Math.abs(position.getRow() - newPosition.getRow());
         int colDiff = Math.abs(position.getColumn() - newPosition.getColumn());
-
+/* tutorial code...
         //check for straight line movement
         boolean straightLine = this.position.getRow() == newPosition.getRow() || this.position.getColumn() == newPosition.getColumn();
 
@@ -51,12 +51,11 @@ public class Queen extends Piece{
         //move valid if destination is empty or contains an opposing piece
         Piece destinationPiece = board[newPosition.getRow()][newPosition.getColumn()];
         return destinationPiece == null || destinationPiece.getColor() != this.getColor();
+*/
 
 
-
-    /* code I used prior to looking at the tutorial code. Used coding from Rook and Bishop as the Queen uses a combination of movement logic from both of these pieces.  Added the final else statement after looking at the tutorial after I realized my initial code did not take into account a movement that was either not straight or diagonal
-
-        int rowDiff = Math.abs(position.getRow() - newPosition.getRow());
+    /*code I used prior to looking at the tutorial code. Used coding from Rook and Bishop as the Queen uses a combination of movement logic from both of these pieces.  Added the final else statement after looking at the tutorial after I realized my initial code did not take into account a movement that was either not straight or diagonal
+*/
 
         if (rowDiff == 0){
             //queen along a row
@@ -100,7 +99,7 @@ public class Queen extends Piece{
         } else {
             return targetPiece.getColor() != this.getColor();
         }
-*/
+
     }
         
 }
